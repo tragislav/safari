@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.conteiner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header {
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 0 49px;
+}
+.header__phone {
+    font-size: 16px;
+    line-height: 30%;
+    color: white;
+    font-weight: 700;
+}
+.header__phone-number {
+    font-weight: 400;
+    margin-left: 19px;
+    padding: 12px 31px 13px;
+    background-color: #886239;
+    border-radius: 22px;
+}
+.menu {
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+
+.header__title {
+    font-family: 'PT Serif', serif;
+}
