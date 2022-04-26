@@ -131,7 +131,7 @@ a {
 .direction__text {
   font-size: 16px;
   line-height: 19px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #d9d9de;
   border-top: none;
   padding: 10px 19px 14px;
 }
@@ -163,4 +163,60 @@ a {
   color: #ffffff;
   font-size: 16px;
   line-height: 130%;
+}
+
+.popular {
+  padding: 100px 0;
+}
+
+.popular__title {
+  margin-bottom: 40px;
+}
+
+.popular__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 32px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #d9d9de;
+}
+
+.popular__link {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 16px 24px 19px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 256px;
+  line-height: 130%;
+}
+
+.popular__link:nth-child(3),
+.popular__link:nth-child(6) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.popular__link-title {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.popular__link-title--big {
+  font-size: 24px;
+}
+
+.popular__price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.popular__country,
+.popular__time {
+  margin-bottom: 15px;
 }
